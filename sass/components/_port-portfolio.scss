@@ -11,7 +11,7 @@
   border: solid 1px #eeeeee;
   margin-right: 30px;
   margin-top: 0;
-  width: 370px;
+  width: 450px;
   margin: 15px;
   &:hover,
   &:focus {
@@ -24,13 +24,19 @@
       transform: translateY(-100%);
     }
   }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 .product-overlay {
   position: absolute;
   top: 100%;
   padding: 63px 24px;
   display: inline-block;
-  width: 370px;
+  width: 450px;
   height: 294px;
   font-style: normal;
   font-weight: normal;
@@ -41,6 +47,13 @@
   color: $invert-text-color;
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 .tc-thumb {
   position: relative;
